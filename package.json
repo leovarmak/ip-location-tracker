@@ -1,8 +1,14 @@
 {
-	"name": "ip-location",
-	"version": "0.0.1",
-	"dependencies": {
-		"axios": "^0.18.0",
-		"public-ip": "^2.4.0"
-	}
+  "name": "ip-location",
+  "version": "0.0.1",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "public-ip": "^2.4.0",
+    "snyk": "^1.161.1"
+  },
+  "scripts": {
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
+  },
+  "snyk": true
 }
