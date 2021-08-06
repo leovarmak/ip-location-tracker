@@ -10,3 +10,4 @@ publicip.v4().then(ip => {
     	console.log('Country: ' + data.country.names.en)
     })
 });
+
